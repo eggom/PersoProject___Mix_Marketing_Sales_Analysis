@@ -22,24 +22,24 @@ The data is split in the ratio of 80:20 into train and test files.
 All the variables are continous variables including the target variable. The target variable is almost distributed normally and ranges 
 from 1.6 to 27 sales.
 
-![alt text](https://github.com/jjoshua1995/Mix-Marketing-analytics/blob/master/Figures/Normal%20distribution.PNG)
+![alt text](https://github.com/eggom/PersoProject___Mix_Marketing_Sales_Analysis/blob/master/media/SalesDist.png)
 
 No null values has been found and no outliers were seen.The data is cleaned by removing unnecessary columns.
 
 # Relation between depedent and independent variables
 
-![alt text](https://github.com/jjoshua1995/Mix-Marketing-analytics/blob/master/Figures/Relationship.PNG)
+![alt text](https://github.com/eggom/PersoProject___Mix_Marketing_Sales_Analysis/blob/master/media/PairsPlot.png)
 
 From the plots , a strong correlation is observed between the TV and sales.ie) when the TV spending cost increases sales also increases.
 Simiarly average trend occurs between radio and sales but points are scattered comapring sales and newspaper.
 
 # Correlation analysis
 
-we can see that there’s a strong correlation between TV and sales (0.82), a moderate correlation between radio and sales (0.61), 
+We can see that there’s a strong correlation between TV and sales (0.82), a moderate correlation between radio and sales (0.61), 
 and a weak correlation between newspaper and sales (0.22). 
 It’s still too early to conclude anything but this is good to keep into consideration moving forward.
 
-![alt text](https://github.com/jjoshua1995/Mix-Marketing-analytics/blob/master/Figures/Correalation%20analysis.PNG)
+![alt text](https://github.com/eggom/PersoProject___Mix_Marketing_Sales_Analysis/blob/master/media/CorrMatrix.png)
 
 # Feature selction
 
@@ -49,7 +49,7 @@ TV feature has more significance than radio which is more significant than newsp
 
 TV> Radio > Newspaper
 
-![alt text](https://github.com/jjoshua1995/Mix-Marketing-analytics/blob/master/Figures/Feature%20importance.PNG)
+![alt text](https://github.com/eggom/PersoProject___Mix_Marketing_Sales_Analysis/blob/master/media/FeatImp.png)
 
 
 # Model Development
@@ -57,7 +57,7 @@ TV> Radio > Newspaper
 Since the target variable is continous variable , we used multiple linear regression model to predict the sales.
 Below is the summary of the built model.
 
-![alt text](https://github.com/jjoshua1995/Mix-Marketing-analytics/blob/master/Figures/Model%20summary.PNG)
+![alt text](https://github.com/eggom/PersoProject___Mix_Marketing_Sales_Analysis/blob/master/media/OLSSummary.png)
 
 We have attained a R sqaure value close 0.88 which indicates the model is performing better and not overfitted model.
 We also have F- stat value of 410 which is greater than 1 ie) the model performs better .
@@ -73,7 +73,7 @@ but the model's predicitve power will increase.
 
 # Evaluating model
 
-![alt text](https://github.com/jjoshua1995/Mix-Marketing-analytics/blob/master/Figures/Actual%20vs%20Predicted.PNG)
+![alt text](https://github.com/eggom/PersoProject___Mix_Marketing_Sales_Analysis/blob/master/media/Predictions.png)
 
 Using test data set , we predict the sales value using the trained model.
 Now we compare the predicted values and actual values and the plot indicates there is mot much deviation and the residuals
